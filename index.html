@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VisionariesAI - Impower your life endless solutions</title>
+        <link rel="icon" href="./assets/images/logo.png" />
+        <link rel="stylesheet" href="./assets/styles/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <!-- navbar starts here -->
+        <nav class="nav" id="nav">
+            <div class="nav-logo-container" onclick="clickScroll(0)">
+                <div class="nav-logo">
+                    <img
+                        src="./assets/images/mylogoy.png"
+                        alt="logo"
+                        width="100%"
+                    />
+                </div>
+                <div class="nav-title-container">
+                    <h1 class="nav-title">VisionariesAI Labs</h1>
+                </div>
+            </div>
+
+            <div class="nav-links-container pc">
+                <ul class="nav-links">
+                    <li
+                        class="nav-link selected-nav-link-container"
+                        onclick="clickScroll(0)"
+                    >
+                        <h1 id="home" class="selected-nav-link nav-link-ele">
+                            Home
+                        </h1>
+                        <span></span>
+                    </li>
+                    <li class="nav-link" onclick="clickScroll(1)">
+                        <h1 id="about" class="nav-link-ele">About</h1>
+                        <span></span>
+                    </li>
+                    <li class="nav-link" onclick="clickScroll(2)">
+                        <h1 id="services" class="nav-link-ele">Services</h1>
+                        <span></span>
+                    </li>
+                    <li class="nav-link" onclick="clickScroll(3)">
+                        <h1 id="products" class="nav-link-ele">Products</h1>
+                        <span></span>
+                    </li>
+                    <li class="nav-link" onclick="clickScroll(4)">
+                        <h1 id="contact" class="nav-link-ele">Contact</h1>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar ends here -->
+
+        <!-- banner starts here -->
+        <section class="banner container">
+            <div
+                class="banner-content-container"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+            >
+                <div class="banner-content">
+                    <h1 class="banner-title">
+                        <span style="color: #f0611c"
+                            >Empowering Your Life</span
+                        >
+                        <span data-aos="fade-in" data-aos-duration="3000"
+                            >With Endless Solutions</span
+                        >
+                    </h1>
+                    <div class="banner-desc-container">
+                        <p class="banner-desc">
+                            We are an AI based company specialising in custom
+                            management systems, IoT and integrating AI.
+                        </p>
+                        <button class="banner-btn btn" onclick="clickScroll(1)">
+                            Learn more <span class="banner-btn-icon">↓</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="banner-image-container pc"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+            >
+                <img
+                    class="banner-image"
+                    src="./assets/images/example-8.svg"
+                    alt="banner image"
+                />
+            </div>
+        </section>
+        <!-- banner ends here -->
+
+        <!-- About us section starts here -->
+
+        <section class="about-us">
+            <div
+                class="about-us-container container"
+                data-aos="fade-in"
+                data-aos-duration="1000"
+            >
+                <h1 class="title" data-aos="fade-left" data-aos-duration="1200">
+                    Who are we?
+                </h1>
+                <p
+                    class="about-us-content"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                >
+                    An <b>AI</b> based organisation that is ready to role dices
+                    in your favour. From monitoring diverse activities to
+                    enhancing patient care and educational management,
+                    VisionariesAI leads the way in pioneering technological
+                    advancements. Let us bring this vision to life on your web
+                    platform.We specialize in creating custom management systems
+                    for education, healthcare, and hospitality sectors, using AI
+                    and IoT technologies, and a few more. Our services include
+                    advanced face recognition, surveillance systems, and
+                    integrated payment solutions for enhanced operational
+                    efficiency and security across industries.
+                </p>
+                <button
+                    data-aos="zoom-in"
+                    data-aos-duration="1200"
+                    class="btn about-us-services-btn"
+                    onclick="clickScroll(2)"
+                >
+                    Services
+                </button>
+            </div>
+        </section>
+
+        <!-- About us section ends here -->
+
+        <!-- services section starts here -->
+
+        <section class="services-parent">
+            <div class="services-container container">
+                <h1
+                    class="title services-title"
+                    data-aos="zoom-in"
+                    data-aos-duration="1200"
+                >
+                    Our Services
+                </h1>
+
+                <div class="services">
+                    <div
+                        class="service"
+                        data-aos="fade-right"
+                        data-aos-duration="1200"
+                        onclick="openModel(4)"
+                    >
+                        <img
+                            class="service-img"
+                            src="./assets/images/iot.jpg"
+                            alt=""
+                        />
+                        <div class="service-content">
+                            <h1 class="service-title">IOT Development</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="service"
+                        data-aos="zoom-in"
+                        data-aos-duration="1200"
+                        onclick="openModel(3)"
+                    >
+                        <img
+                            class="service-img"
+                            src="./assets/images/AIML.jpeg"
+                            alt=""
+                        />
+                        <div class="service-content">
+                            <h1 class="service-title">AI/ML</h1>
+                        </div>
+                    </div>
+
+                    <div
+                        class="service"
+                        data-aos="fade-left"
+                        data-aos-duration="1200"
+                        onclick="openModel(1)"
+                    >
+                        <img
+                            class="service-img"
+                            src="./assets/images/software_development.png"
+                            alt=""
+                        />
+                        <div class="service-content">
+                            <h1 class="service-title">Software Development</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services starts ends here -->
+
+        <!-- products section starts here -->
+
+        <section class="proudcts-parent">
+            <div class="container products-container">
+                <h1 class="title">Our Products</h1>
+
+                <div class="products">
+                    <div class="product" onclick="openModel(1)">
+                        <h1 class="product-title title">Management System</h1>
+                        <p class="product-docs">
+                            We provide multiple management systems that caters
+                            in academic, transport and financial industry which
+                            mainly focusses on students, transport, employee,
+                            hostel, academic, payroll and finance.
+                        </p>
+                    </div>
+
+                    <div class="product" onclick="openModel(2)">
+                        <h1 class="product-title title">HEALTHCARE:</h1>
+                        <p class="product-docs">
+                            Our AI smart cameras will help the world in
+                            healthcare centres by observing patients and
+                            generating a detailed report on their activity. It
+                            would track the sleeping, eating, speaking and
+                            mobility patterns of the patient. This would help
+                            our software to create efficient patient care
+                            management reports and many more.
+                        </p>
+                    </div>
+
+                    <div class="product" onclick="openModel(3)">
+                        <h1 class="product-title title">
+                            AI Management System
+                        </h1>
+                        <p class="product-docs">
+                            We specialise in facial recognition system using our
+                            personalised AI/ML model to create smart cameras.
+                            Our services also enables us for 2D and 3D facial
+                            recognition with high accuracy to enable it to be
+                            used for attendance tracking, enhanced security and
+                            efficient. Our AI management systems also offers
+                            seamless payment gateway integration for streamlined
+                            transactions.
+                        </p>
+                    </div>
+
+                    <div class="product" onclick="openModel(4)">
+                        <h1 class="product-title title">Internet of Things</h1>
+                        <p class="product-docs">
+                            IoT development involves creating interconnected
+                            systems of smart devices, sensors, and software,
+                            enabling them to communicate and share data
+                            seamlessly. This transformative field merges
+                            hardware and software expertise, fostering
+                            innovation in industries like healthcare,
+                            transportation, and home automation, creating a
+                            connected world for improved efficiency and
+                            functionality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- products section ends here -->
+
+        <!-- brocher download section starts here -->
+
+        <section class="get-in-touch">
+            <div class="container">
+                <h1 class="download-title title">Know More Details???</h1>
+                <a
+                    href="./assets/images/software_development.png"
+                    download
+                    class="btn download-btn"
+                >
+                    Get Brocher
+                    <img
+                        style="margin-left: 10px"
+                        src="./assets/images/download-solid-final.svg"
+                        alt="download icon"
+                    />
+                </a>
+            </div>
+        </section>
+
+        <!-- brocher download section ends here  -->
+
+        <!-- contact us section starts here  -->
+
+        <section class="contact-us-container">
+            <div class="titles-container">
+                <h1 class="title contact-us-title">Contact US</h1>
+                <a
+                    class="contact-detail"
+                    href="mailto:contact@visionariesai.com"
+                    >contact@visionariesai.com</a
+                >
+                <a class="contact-detail" href="mailto:info@visionariesai.com"
+                    >info@visionariesai.com</a
+                >
+                <a class="contact-detail" href="tel:+918110000608"
+                    >+918110000608</a
+                >
+                <a class="contact-detail" href="tel:+918110000614"
+                    >+918110000614</a
+                >
+            </div>
+
+            <div class="form-container">
+                <form class="form" id="form">
+                    <div class="feilds-container">
+                        <div class="input">
+                            <label for="name">Name*</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                placeholder="Enter your name"
+                                class="input-field"
+                            />
+                        </div>
+                        <div class="input">
+                            <label for="email">Email*</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="Enter your email"
+                                class="input-field"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="feilds-container">
+                        <div class="input">
+                            <label for="mobile">Mobile*</label>
+                            <input
+                                type="number"
+                                id="mobile"
+                                name="mobile"
+                                required
+                                placeholder="Enter your mobile"
+                                class="input-field"
+                            />
+                        </div>
+                        <div class="input">
+                            <label for="alternate-mobile"
+                                >Alternate Mobile Number</label
+                            >
+                            <input
+                                type="number"
+                                name="alternate-mobile"
+                                id="alternate-mobile"
+                                placeholder="Enter your alternate-mobile"
+                                class="input-field"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="input subject-input">
+                        <label for="organization-name"
+                            >Organization Name*</label
+                        >
+                        <input
+                            id="organization-name"
+                            name="organization-name"
+                            rows="4"
+                            cols="50"
+                            class="input-field"
+                            placeholder="organization Name"
+                        />
+                    </div>
+
+                    <div class="input subject-input" style="margin-top: 40px">
+                        <label for="subject">Subject*</label>
+                        <input
+                            style="min-height: 100px"
+                            id="subject"
+                            name="subject"
+                            rows="4"
+                            cols="50"
+                            class="input-field"
+                            placeholder="Hey, I wanna know more about VisionariesAI"
+                        />
+                    </div>
+                    <div class="form-btn-container">
+                        <button class="btn form-btn" id="form-btn">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- contact us section ends here -->
+
+        <!-- footer section starts here -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_child">
+                    <img
+                        src="./assets/images/logo-removebg-preview.png"
+                        alt="logo"
+                        class="footer-logo"
+                        width="100px"
+                    />
+                    <h1 class="title footer-title">VisionariesAI Labs</h1>
+                </div>
+
+                <div class="footer_child">
+                    <ul>
+                        <li>Links</li>
+                        <li onclick="clickScroll(0)" class="footer-link-hover">
+                            Home
+                        </li>
+                        <li onclick="clickScroll(1)" class="footer-link-hover">
+                            About
+                        </li>
+                        <li onclick="clickScroll(2)" class="footer-link-hover">
+                            Services
+                        </li>
+                        <li onclick="clickScroll(3)" class="footer-link-hover">
+                            Products
+                        </li>
+                        <li onclick="clickScroll(4)" class="footer-link-hover">
+                            Contact
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_child">
+                    <ul>
+                        <li>Contact Me</li>
+                        <li>
+                            <a
+                                href="https://maps.google.com?q=18.3485760,84.0737906&hl=en-IN&gl=in&entry=gps&lucs=,47071704&g_st=iw"
+                                target="balnk"
+                            >
+                                Dubbakavani Peta, Polaki, Srikakulam, 532429,
+                                Andhra Pradesh, India
+                            </a>
+                        </li>
+                        <li class="footer-link-hover">
+                            <a href="tel:+918110000608">+91 8110000608</a>
+                        </li>
+                        <li class="footer-link-hover">
+                            <a href="tel:++918110000614">+91 8110000614</a>
+                        </li>
+                        <li class="footer-link-hover">
+                            <a href="mailto:contact@visionariesai.com">
+                                Contact@visionariesai.com
+                            </a>
+                        </li>
+                        <li class="footer-link-hover">
+                            <a
+                                href="mailto:
+                            info@visionariesai.com"
+                            >
+                                info@visionariesai.com
+                            </a>
+                        </li>
+                        <li class="footer-link-hover">
+                            <a
+                                href="https://www.linkedin.com/in/visionariesai-labs-31a527294/"
+                                target="blank"
+                                >LinkedIn</a
+                            >
+                        </li>
+                        <li class="footer-link-hover">
+                            <a
+                                href="https://www.instagram.com/visionariesai/"
+                                target="blank"
+                                >Instagram</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- fotter section ends here -->
+
+        <!-- product details model section here -->
+
+        <section class="model-parent" id="model">
+            <div class="model" id="model-child">
+                <h1 class="model-title title" id="product-title">
+                    Product Name
+                </h1>
+
+                <div id="model-products"></div>
+
+                <div class="close-btn-container">
+                    <button class="close-btn" onclick="closeModel()">X</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- product details model section ends here -->
+
+        <!-- importing and initialzing mailjs  -->
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            const PUBLIC_KEY = "9R9VMnwYtqehumZjw";
+            (function () {
+                emailjs.init(PUBLIC_KEY);
+            })();
+        </script>
+
+        <!-- attaching javascript file -->
+        <script src="./assets/scripts/script.js"></script>
+
+        <!-- importing aos library -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
